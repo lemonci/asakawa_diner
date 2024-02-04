@@ -45,7 +45,7 @@ try:
       st.dataframe(fruityvice_normalized)
     except KeyError:
       st.error('Please try another fruit name.')
-except URLError as e:
+except urllib.error.URLError as e:
   st.error()
 
 st.header("View Our Fruit List - Add Your Favorites!")
